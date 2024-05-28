@@ -3,6 +3,53 @@
 <head>
     <title>flexbox properties</title>
 </head>
+<style>
+    .calculator-body{
+        height:290px;
+        width:250px;
+        background-color: #06060e;
+        margin: 20px;
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 40px;
+    }
+    .screen{
+        background-color: #a1af77;
+        text-align: right;
+        width: 220px;
+        display: block;
+        font-size: 30px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .buttons-container{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn{
+        width: 50px;
+        text-align: center;
+        padding: 2px;
+        font-size: 20px;
+        margin: 3px;
+    }
+    .btn-equal{
+        background-color: #ff6348;
+        height: 70px;
+        color: #fff;
+        border: 0.5px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        box-shadow: 0 0 5px 0 #fff;
+        transition: 0.5s;
+    } 
+</style>
 <body>
     <div class="calculator-body">
         <input type="text" value="0" class="screen"/>
